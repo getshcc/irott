@@ -1,16 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-
+import { RouterView } from 'vue-router'
+import MainHeader from './components/MainHeader.vue';
 </script>
 
 <template>
   <section>
-    <header>
-      <nav style="display: flex; flex-direction: column;">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </header>
+    <MainHeader></MainHeader>
     <RouterView></RouterView>
   </section>
 </template>
