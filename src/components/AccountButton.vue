@@ -7,7 +7,7 @@ import UserIcon from './icons/UserIcon.vue';
         <span>
             <UserIcon></UserIcon>
         </span>
-        <span class="hidden lg:block">
+        <span class="hidden lg:block text-xs font-semibold">
             حساب کاربری
         </span>
     </button>

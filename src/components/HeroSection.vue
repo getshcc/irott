@@ -22,9 +22,9 @@
                         class="p-4 outline-none min-w-[380px] lg:w-[500px] rounded-md bg-zinc-100 dark:bg-zinc-900/70 dark:placeholder:text-zinc-500"
                         placeholder="your@email.com" dir="ltr">
                     <button
-                        class="absolute py-[10px] px-5 bg-[#FF5656] rounded-md text-white text-sm m-2 shadow-md shadow-[#ff565670] dark:shadow-none hover:scale-90 transition-all duration-150">ثبت
+                        class="absolute py-[8px] px-5 bg-[#FF5656] rounded-md text-white text-sm m-2 shadow-md shadow-[#ff565670] dark:shadow-none hover:scale-y-90 hover:scale-x-95 transition-all duration-300">ثبت
                         نام</button>
-                    <div class="flex justify-center items-center gap-x-2 lg:gap-x-3 pt-4 ">
+                    <div class="flex justify-center items-center gap-x-1 lg:gap-x-2 pt-4 ">
                         <input type="checkbox" name="news" id="news">
                         <label for="news" class="text-xs">
                             همچمین تمایل دارم عضو خبرنامه شوم و از اخرین اخبار و تخفیفات مطلع باشم.

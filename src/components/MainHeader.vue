@@ -28,11 +28,14 @@ const mobileMenuToggle = () => {
 
             <div class="flex items-center gap-x-5">
                 <div class="flex items-center gap-x-1">
-                    <MainLogo class="w-10"></MainLogo>
+                    <a href="/">
+                        <MainLogo class="w-10"></MainLogo>
+                    </a>
                     <div>
                         <h1 class="font-yekan font-extrabold md:font-black text-zinc-900 dark:text-white text-base">
                             ایران یک، دو، سه</h1>
-                        <h3 class="text-xs font-light mt-1 hidden lg:block text-zinc-400 dark:text-zinc-300 leading-4">آکادمی انلاین تخصصی هک و تامین امنیت</h3>
+                        <h3 class="text-xs font-light mt-1 hidden lg:block text-zinc-400 dark:text-zinc-300 leading-4">
+                            آکادمی انلاین تخصصی هک و تامین امنیت</h3>
                     </div>
                 </div>
 

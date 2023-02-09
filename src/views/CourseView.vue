@@ -5,7 +5,11 @@ import courses from "../data/courses.json"
 <template>
     <section>
         <h1>Course View</h1>
-        {{ courses }}
+        <!-- {{ courses }} -->
+
+        <div v-for="course in courses">
+            {{ course.title }}
+        </div>
     </section>
 </template>
 

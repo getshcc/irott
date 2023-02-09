@@ -7,6 +7,10 @@ module.exports = {
         fontFamily: {
             yekan: ["IRANYekan"],
         },
+        fontSize: {
+            xxs: ".6rem",
+            xs: ".7rem",
+        },
     },
     plugins: [],
 };
