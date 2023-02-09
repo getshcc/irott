@@ -32,14 +32,14 @@ const mobileMenuToggle = () => {
                     <div>
                         <h1 class="font-yekan font-extrabold md:font-black text-zinc-900 dark:text-white text-base">
                             ایران یک، دو، سه</h1>
-                        <h3 class="text-xs hidden">آکادمی انلاین تخصصی هک و تامین امنیت</h3>
+                        <h3 class="text-xs font-light mt-1 hidden lg:block text-zinc-400 dark:text-zinc-300 leading-4">آکادمی انلاین تخصصی هک و تامین امنیت</h3>
                     </div>
                 </div>
 
                 <DesktopMenu class="md:flex lg:hidden"></DesktopMenu>
             </div>
 
-            <div class="flex gap-x-2 md:hidden">
+            <div class="flex gap-x-5 md:hidden">
                 <button>
                     <UserIcon></UserIcon>
                 </button>
@@ -48,7 +48,7 @@ const mobileMenuToggle = () => {
                 </button>
             </div>
 
-            <DesktopMenu class="lg:flex font-medium mr-10"></DesktopMenu>
+            <DesktopMenu class="lg:flex font-medium"></DesktopMenu>
 
 
             <div class="hidden md:flex justify-end text-sm gap-x-3">

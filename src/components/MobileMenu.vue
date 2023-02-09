@@ -25,11 +25,11 @@ const emitClose = () => {
 <template>
     <section class="md:hidden">
         <!-- Overlay -->
-        <div @click="emitClose" class="w-full h-screen bg-black/20 backdrop-blur-sm absolute top-0 left-0"></div>
+        <div @click="emitClose" class="w-full h-screen bg-black/20 backdrop-blur-sm absolute top-0 left-0 z-[2]"></div>
         <!-- Menu -->
         <section
-            class="slide w-[75%] h-screen bg-white/95 dark:bg-zinc-800/50 absolute left-0 top-0 p-5 backdrop-blur-lg shadow-lg overflow-y-auto overflow-x-hidden">
-            <div class="mb-4 flex flex-row-reverse justify-between ">
+            class="slide w-[75%] h-screen bg-white/95 dark:bg-zinc-800/95 absolute left-0 top-0 p-5 backdrop-blur-lg shadow-lg overflow-y-auto overflow-x-hidden z-[3]">
+            <div class="mb-4 flex flex-row-reverse justify-between py-3">
                 <!-- Close Button -->
                 <button class="text-sm" @click="emitClose">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -39,13 +39,13 @@ const emitClose = () => {
 
                 </button>
                 <!-- DarkMode Toggle Button -->
-                <DarkmodeSwitch></DarkmodeSwitch>
+                <DarkmodeSwitch />
             </div>
             <!-- Search Input -->
             <div>
                 <div class="mb-4">
                     <input type="text"
-                        class="w-full bg-zinc-100 dark:bg-zinc-900/50 p-3 placeholder:text-xs outline-none rounded-md placeholder:text-zinc-400/70 dark:placeholder:text-zinc-600"
+                        class="w-full text-sm bg-zinc-100 dark:bg-zinc-900/50 p-3 placeholder:text-xs outline-none rounded-md placeholder:text-zinc-400/70 dark:placeholder:text-zinc-600"
                         placeholder="جست و جو">
                 </div>
             </div>
@@ -83,7 +83,7 @@ const emitClose = () => {
                     <RouterLink @click="emitClose" to="/roadmap" class="flex items-center gap-x-2">
                         <span class="bg-orange-200/80 dark:bg-zinc-900/70 p-2 rounded-lg">
                             <!-- MapIcon -->
-                            <MapIcon></MapIcon>
+                            <MapIcon />
                         </span>
                         نقشه راه
                     </RouterLink>
