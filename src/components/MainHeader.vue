@@ -1,16 +1,16 @@
 <script setup>
 import { ref } from "vue"
-import { RouterLink } from "vue-router"
 import MainLogo from "./icons/MainLogo.vue"
 import MenuIcon from "./icons/MenuIcon.vue"
 import UserIcon from "./icons/UserIcon.vue"
 import SearchIcon from "./icons/SearchIcon.vue"
+import CloseIcon from "./icons/CloseIcon.vue"
 import MobileMenu from "./MobileMenu.vue"
 import DesktopMenu from "./DesktopMenu.vue"
 import DarkmodeSwitch from "./DarkmodeSwitch.vue"
 import AccountButton from "./AccountButton.vue"
 
-
+const searchView = ref(false)
 const menuStatus = ref(false)
 
 const mobileMenuToggle = () => {
@@ -23,7 +23,14 @@ const mobileMenuToggle = () => {
 <template>
     <MobileMenu class="md:hidden" @close="mobileMenuToggle" v-show="menuStatus"></MobileMenu>
 
-    <header class="mb-5 py-2">
+    <header class="mt-4">
+        <section v-if="searchView"
+            class="flex items-center justify-between gap-x-4 mb-4 transition-all duration-150 ease-linear">
+            <input type="text" class="w-full py-2 bg-transparent" placeholder="جستوجو کنید...">
+            <button class="flex" @click="searchView = false">
+                <CloseIcon />
+            </button>
+        </section>
         <nav class="flex gap-x-6 justify-between items-center">
 
             <div class="flex items-center gap-x-5">
@@ -34,7 +41,8 @@ const mobileMenuToggle = () => {
                     <div>
                         <h1 class="font-yekan font-extrabold md:font-black text-zinc-900 dark:text-white text-base">
                             ایران یک، دو، سه</h1>
-                        <h3 class="text-xs font-light mt-1 hidden lg:block text-zinc-400 dark:text-zinc-300 leading-4">
+                        <h3 id="brand-description"
+                            class="font-light mt-1 hidden lg:block text-zinc-400 dark:text-zinc-300 leading-4">
                             آکادمی انلاین تخصصی هک و تامین امنیت</h3>
                     </div>
                 </div>
@@ -59,7 +67,7 @@ const mobileMenuToggle = () => {
                     <DarkmodeSwitch></DarkmodeSwitch>
                 </button>
                 <button>
-                    <SearchIcon></SearchIcon>
+                    <SearchIcon @click="searchView = !searchView"></SearchIcon>
                 </button>
                 <button>
                     <AccountButton></AccountButton>
@@ -70,5 +78,7 @@ const mobileMenuToggle = () => {
 </template>
 
 <style scoped>
-
+#brand-description {
+    font-size: 10px;
+}
 </style>
