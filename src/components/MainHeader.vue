@@ -23,7 +23,7 @@ const mobileMenuToggle = () => {
 <template>
     <MobileMenu class="md:hidden" @close="mobileMenuToggle" v-show="menuStatus"></MobileMenu>
 
-    <header class="mt-4">
+    <header class="my-4">
         <section v-if="searchView"
             class="flex items-center justify-between gap-x-4 mb-4 transition-all duration-150 ease-linear">
             <input type="text" class="w-full py-2 bg-transparent" placeholder="جستوجو کنید...">
