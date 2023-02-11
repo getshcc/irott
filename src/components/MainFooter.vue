@@ -4,8 +4,8 @@ import MainLogo from './icons/MainLogo.vue';
 
 <template>
 
-    <footer class="bg-zinc-50 p-5 mt-10 absolute w-screen left-0">
-        <section class="container mx-auto">
+    <footer class="bg-zinc-50 dark:bg-zinc-900/40 p-5 px-10 mt-10 absolute w-screen left-0">
+        <section class="container mx-auto lg:pr-5">
 
             <!-- Webapp identify -->
             <div class="flex flex-col md:flex-row items-center justify-between pb-5">
@@ -16,9 +16,10 @@ import MainLogo from './icons/MainLogo.vue';
                 <!-- useful links -->
                 <div>
                     <ul class="flex gap-x-3 text-xs text-zinc-500 pt-3 md:pt-0">
-                        <li><a class="hover:text-zinc-800 font-medium" href="">تدریس در آکادمی</a></li>
-                        <li><a class="hover:text-zinc-800 font-medium" href="">قوانین و مقررات</a></li>
-                        <li><a class="hover:text-zinc-800 font-medium" href="">چارت آموزشی</a></li>
+                        <li><a class="hover:text-zinc-800 dark:hover:text-zinc-200 font-medium" href="">تدریس در
+                                آکادمی</a></li>
+                        <li><a class="hover:text-zinc-800 dark:hover:text-zinc-200 font-medium" href="">قوانین و مقررات</a></li>
+                        <li><a class="hover:text-zinc-800 dark:hover:text-zinc-200 font-medium" href="">چارت آموزشی</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +43,7 @@ import MainLogo from './icons/MainLogo.vue';
 
                     <div class="flex gap-x-4 text-sm">
 
-                        <div class="bg-zinc-100 px-4 gap-x-2 rounded-md flex items-center">
+                        <div class="bg-zinc-100 dark:bg-zinc-800 px-4 gap-x-2 rounded-md flex items-center">
                             <span class="font-mono">021-77539482</span>
                             <span class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -53,7 +54,7 @@ import MainLogo from './icons/MainLogo.vue';
                             </span>
                         </div>
 
-                        <div class="bg-zinc-100 px-4 py-2 gap-x-2 rounded-md flex items-center">
+                        <div class="bg-zinc-100 dark:bg-zinc-800 px-4 py-2 gap-x-2 rounded-md flex items-center">
                             <span class="font-mono">info@iran123.org</span>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -69,7 +70,7 @@ import MainLogo from './icons/MainLogo.vue';
                 </div>
 
                 <!-- CopyRight | Developer Sign and social media links -->
-                <div class="border-t pt-3 flex flex-col xl:flex-row items-center justify-between ">
+                <div class="border-t dark:border-zinc-800 pt-3 flex flex-col xl:flex-row items-center justify-between ">
                     <p class="text-xs text-center text-zinc-500">تمام حقوق مادی و معنوی برای
                         <a class="font-extrabold " href="">ایران یک، دو، سه </a>
                         محفوظ است و هرگونه نشر و کپی برداری از مطالب پیگرد قانونی به همراه خواهد داشت.
