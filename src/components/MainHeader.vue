@@ -10,12 +10,14 @@ import DesktopMenu from "./DesktopMenu.vue"
 import DarkmodeSwitch from "./DarkmodeSwitch.vue"
 import AccountButton from "./AccountButton.vue"
 
+const body = document.querySelector("body");
 const searchView = ref(false)
 const menuStatus = ref(false)
 
 const mobileMenuToggle = () => {
     console.log("mobileMenuToggle")
     menuStatus.value = !menuStatus.value
+    body.classList.toggle("overflow-hidden")
 }
 
 </script>

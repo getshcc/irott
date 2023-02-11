@@ -28,7 +28,7 @@ const emitClose = () => {
         <div @click="emitClose" class="w-full h-screen bg-black/20 backdrop-blur-sm absolute top-0 left-0 z-[2]"></div>
         <!-- Menu -->
         <section
-            class="slide w-[75%] h-screen bg-white/95 dark:bg-zinc-800/95 absolute left-0 top-0 p-5 backdrop-blur-lg shadow-lg overflow-y-auto overflow-x-hidden z-[3]">
+            class="slide w-[75%] h-screen bg-white/95 dark:bg-zinc-800/95 fixed left-0 top-0 p-5 backdrop-blur-lg shadow-lg overflow-y-auto overflow-x-hidden z-[3]">
             <div class="mb-4 flex flex-row-reverse justify-between py-3">
                 <!-- Close Button -->
                 <button class="text-sm" @click="emitClose">
