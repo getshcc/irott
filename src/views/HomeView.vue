@@ -16,10 +16,10 @@ const c = ref(courses)
   <CoursesSection :courses="c" />
 
   <!-- Podcasts Section -->
-  <PodcastsSection></PodcastsSection>
+  <PodcastsSection />
 
   <!-- Articles Section -->
-  <ArticlesSection></ArticlesSection>
+  <ArticlesSection />
 
 </template>
 

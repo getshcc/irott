@@ -26,7 +26,7 @@
         <slot></slot>
 
         <footer class="md:hidden text-xs w-full flex justify-center mt-5">
-            <a href="" class="bg-zinc-100 dark:bg-zinc-900/50 w-full py-3 flex justify-center rounded-md">بیشتر...</a>
+            <a href="" class="bg-zinc-100 dark:bg-zinc-900/40 w-full py-3 flex justify-center rounded-md">بیشتر...</a>
         </footer>
     </section>
 
