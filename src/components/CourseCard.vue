@@ -8,9 +8,9 @@ const { course } = defineProps(["course"])
         <header class="flex flex-col gap-y-1 px-2 py-4">
             <div class="flex justify-between items-center">
                 <h4 class="font-extrabold truncate">{{ course.title }}</h4>
-                <span class="text-xs font-extrabold text-green-500">
+                <span class="text-xs font-extrabold text-green-500 flex gap-x-1">
                     <span>{{ course.price }}</span>
-                    تومان
+                    <span class="md:hidden lg:flex">تومان</span>
                 </span>
             </div>
             <div class="flex justify-between items-center">
