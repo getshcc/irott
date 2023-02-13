@@ -7,7 +7,7 @@ const { course } = defineProps(["course"])
         <img class="rounded-md w-full" src="../assets/imgs/Courses-Cover/01-Raspberry_Pi.jpg" alt="">
         <header class="flex flex-col gap-y-1 px-2 py-4">
             <div class="flex justify-between items-center">
-                <h4 class="font-extrabold">{{ course.title }}</h4>
+                <h4 class="font-extrabold truncate">{{ course.title }}</h4>
                 <span class="text-xs font-extrabold text-green-500">
                     <span>{{ course.price }}</span>
                     تومان
