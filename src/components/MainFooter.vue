@@ -4,7 +4,7 @@ import MainLogo from './icons/MainLogo.vue';
 
 <template>
 
-    <footer class="bg-zinc-50 dark:bg-zinc-900/40 p-5 px-10 mt-10 absolute w-screen left-0">
+    <footer class="bg-zinc-50 dark:bg-zinc-900/40 p-5 px-10 absolute w-screen left-0">
         <section class="container mx-auto lg:pr-5">
 
             <!-- Webapp identify -->

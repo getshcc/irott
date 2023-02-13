@@ -3,12 +3,15 @@
         <!-- Main Text -->
         <div class="font-black">
             <h1
-                class="dark:text-white bg-gradient-to-b text-transparent bg-clip-text from-[#FF6666] to-[#ff5656] leading-[100px] text-[4.7rem] min-w-[400px] w-auto text-center">
-                <span>ورود به دنیای </span>
+                class="dark:text-white bg-gradient-to-b text-transparent bg-clip-text from-[#FF6666] to-[#ff5656] leading-[100px] text-[4.4rem] min-w-[400px] w-auto text-center">
+                <span>
+                    دروازه ورود شما
+                </span>
 
                 <span class="lg:block dark:text-white">
-                    هک و امنیت با
-                    <span class="font-black dark:text-white">ایران 123</span>
+                    <span class="md:text-[2rem] lg:text-[4.4rem] lg:ml-4">به دنیای</span>
+                    <span class="block lg:inline-block">هک و تامین امنیت</span>
+                    <!-- <span class="font-black dark:text-white">ایران 123</span> -->
                 </span>
             </h1>
         </div>

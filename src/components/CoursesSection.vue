@@ -1,6 +1,6 @@
 <script setup>
 import CourseCard from './CourseCard.vue';
-import VideoIcon from './icons/VideoIcon.vue';
+import FillVideoIcon from './icons/FillVideoIcon.vue';
 import SplitSection from './SplitSection.vue';
 const { courses } = defineProps(['courses'])
 </script>
@@ -9,7 +9,7 @@ const { courses } = defineProps(['courses'])
 
     <SplitSection>
         <template #icon>
-            <VideoIcon />
+            <FillVideoIcon></FillVideoIcon>
         </template>
         <template #title>
             دوره ها
