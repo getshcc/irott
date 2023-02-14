@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection.vue';
 import CoursesSection from '../components/CoursesSection.vue';
 import PodcastsSection from "../components/PodcastsSection.vue";
 import ArticlesSection from "../components/ArticlesSection.vue";
-import HelpSection from "../components/icons/HelpSection.vue"
+import HelpSection from "../components/HelpSection.vue"
 
 const c = ref(courses)
 </script>

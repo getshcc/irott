@@ -13,6 +13,7 @@ import MainLogo from './icons/MainLogo.vue';
                     <MainLogo class="w-8 grayscale hover:grayscale-0 transition-all ease-linear"></MainLogo>
                     <h4 class="font-extrabold text-lg">ایران یک، دو، سه</h4>
                 </div>
+                
                 <!-- useful links -->
                 <div>
                     <ul class="flex gap-x-3 text-xs text-zinc-500 pt-3 md:pt-0">
