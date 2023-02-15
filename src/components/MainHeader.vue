@@ -2,13 +2,14 @@
 import { ref } from "vue"
 import MainLogo from "./icons/MainLogo.vue"
 import MenuIcon from "./icons/MenuIcon.vue"
-import UserIcon from "./icons/UserIcon.vue"
 import SearchIcon from "./icons/SearchIcon.vue"
 import CloseIcon from "./icons/CloseIcon.vue"
 import MobileMenu from "./MobileMenu.vue"
 import DesktopMenu from "./DesktopMenu.vue"
 import DarkmodeSwitch from "./DarkmodeSwitch.vue"
 import AccountButton from "./AccountButton.vue"
+import MainModal from "./MainModal.vue"
+import AccountModal from "./AccountModal.vue"
 
 const body = document.querySelector("body");
 const searchView = ref(false)
@@ -20,6 +21,11 @@ const mobileMenuToggle = () => {
     body.classList.toggle("overflow-hidden")
 }
 
+const showModal = ref(false)
+const toggleModal = () => {
+    showModal.value = !showModal.value
+    body.classList.toggle("overflow-hidden")
+}
 </script>
 
 <template>
@@ -53,9 +59,7 @@ const mobileMenuToggle = () => {
                 </div>
 
                 <div class="flex gap-x-5 md:hidden">
-                    <button>
-                        <UserIcon></UserIcon>
-                    </button>
+                    <AccountButton @click="toggleModal"></AccountButton>
                     <button @click="mobileMenuToggle">
                         <MenuIcon></MenuIcon>
                     </button>
@@ -71,16 +75,32 @@ const mobileMenuToggle = () => {
                         <SearchIcon @click="searchView = !searchView"></SearchIcon>
                     </button>
                     <button>
-                        <AccountButton></AccountButton>
+                        <AccountButton @click="toggleModal"></AccountButton>
                     </button>
                 </div>
+
+                <transition name="fade">
+                    <MainModal @close="toggleModal" v-if="showModal">
+                        <AccountModal></AccountModal>
+                    </MainModal>
+                </transition>
             </nav>
         </header>
-    </section>
+</section>
 </template>
 
 <style scoped>
 #brand-description {
     font-size: 10px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup>
 import CourseCard from './CourseCard.vue';
-import FillVideoIcon from './icons/FillVideoIcon.vue';
+import FillVideoIcon from './icons/FillVideoicon.vue';
 import SplitSection from './SplitSection.vue';
 const { courses } = defineProps(['courses'])
 </script>
