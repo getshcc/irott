@@ -1,12 +1,12 @@
 <script setup>
+
 import CourseCard from './CourseCard.vue';
-import FillVideoIcon from './icons/FillVideoIcon.vue';
+import FillVideoIcon from './icons/FillVideoicon.vue';
 import SplitSection from './SplitSection.vue';
 const { courses } = defineProps(['courses'])
 </script>
 
 <template>
-
     <SplitSection>
         <template #icon>
             <FillVideoIcon></FillVideoIcon>
@@ -19,10 +19,7 @@ const { courses } = defineProps(['courses'])
                 <CourseCard v-for="course in courses" :key="course.id" :course="course"></CourseCard>
             </main>
         </template>
-    </SplitSection>
-
+</SplitSection>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
