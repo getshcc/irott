@@ -14,7 +14,7 @@
                           </svg>                      
                     </slot>
                 </span>
-                <h2 class="font-bold text-lg">
+                <h2 class="font-black text-xl">
                     <slot name="title">عنوان</slot>
                 </h2>
             </div>
