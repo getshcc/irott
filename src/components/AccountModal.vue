@@ -1,5 +1,11 @@
 <script setup>
 
+
+
+
+
+
+
 import { ref } from 'vue'
 const signupText = ref(false)
 function toggleSignupText() {
@@ -18,16 +24,22 @@ function toggleSignupText() {
                 </div>
                 <div class="flex flex-col gap-y-2 items-start">
                     <label class="text-sm" for="num">شماره موبایل خود را وارد کنید:</label>
-                    <input type="number" class="bg-zinc-100 w-full p-3 mt-1 rounded-md dark:bg-zinc-900/80 apperance-none"
+                    <input type="number"
+                        class="bg-zinc-100 focus:bg-zinc-200/70 focus:ring-2 ring-offset-2 dark:ring-offset-zinc-800 dark:ring-zinc- transition duration-150 w-full p-4 mt-1 rounded-md dark:bg-zinc-900/80 apperance-none text-sm"
                         name="" id="" placeholder="شماره همراه">
 
-                    <button @click="toggleSignupText" class="text-xs text-blue-500">تا کنون ثبت نام نکرده اید؟</button>
-                    <p class="text-xs text-zinc-400 mt-1" v-if="signupText">اگر قبلا ثبت نام نکرده اید "کد ثبت‌نام"
-                        برای شما
-                        ارسال میشود.</p>
+                    <button @click="toggleSignupText" class="text-xs text-blue-500 dark:text-blue-400 mt-1">تا کنون ثبت نام نکرده اید؟</button>
+                    <div class="h-4">
+                        <Transition name="fade">
+                            <p v-if="signupText" class="text-xs text-zinc-400 dark:text-zinc-400/90 ">اگر قبلا ثبت نام نکرده اید "کد ثبت‌نام"
+                                برای شما
+                                ارسال میشود.</p>
+                        </Transition>
+                    </div>
                 </div>
                 <div class="flex flex-col items-start gap-y-4 pt-4">
-                    <button class="rounded-md font-extrabold">ورود</button>
+                    <button
+                        class="rounded-md font-extrabold bg-blue-500 hover:bg-blue-600 px-8 py-2 text-white">ورود</button>
                 </div>
             </div>
         </div>
@@ -49,5 +61,15 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>
